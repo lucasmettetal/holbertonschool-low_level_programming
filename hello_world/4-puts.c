@@ -2,10 +2,13 @@
 
 
 /**
-* main-prints "Programming is like building a multilingual
-* puzzle, followed by a new line."
-* return 0.
-*/
+ * main - Entry point
+ * 
+ * Description: 'Programming is like building a multilingual puzzle, followed by a new line.'
+ * @parameter: describe the parameter
+ * 
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 
