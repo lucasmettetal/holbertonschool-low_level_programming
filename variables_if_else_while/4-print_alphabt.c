@@ -11,6 +11,8 @@ int main(void)
 char alphabet = 'a';
 while (alphabet <= 'z')
 if (aphabet == 'e'||aphabet == 'q')
+alphabet++;
+continue;
 {
 putchar(alphabet);
 alphabet++;
