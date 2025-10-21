@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
-* Declare a variable and initialize it with the first member of
-*the range [a - z]
+* main - Declare a variable and initialize it with the first member of
+*
+* Return: Always 0
 */
 
 int main(void)
