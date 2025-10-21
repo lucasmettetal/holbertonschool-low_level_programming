@@ -27,7 +27,7 @@ else if (n > 5)
 {
 printf(" is greater than 5\n");
 }
-else if (n = 0)
+else
 {
 printf(" and is 0\n");
 }
