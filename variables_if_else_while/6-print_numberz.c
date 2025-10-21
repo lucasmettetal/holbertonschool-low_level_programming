@@ -13,7 +13,7 @@ while (x < 10)
 x++;
 
 {
-printf("%d", x);
+putchar(x);
 
 if (x < 9);
 
