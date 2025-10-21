@@ -17,7 +17,7 @@ alphabet++;
 alphabet = 'A';
 while (alphabet <= 'Z')
 {
-putchar(alphabet)
+putchar(alphabet);
 alphabet++;
 }
 
