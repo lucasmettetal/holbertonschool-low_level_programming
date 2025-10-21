@@ -13,7 +13,7 @@ while (x < 10)
 
 
 {
-putchar(x+'0');
+putchar(x + '0');
 
 x++;
 
