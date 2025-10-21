@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* Declare a variable and initialize it with the first member of 
-*the range [a - z] 
+* Declare a variable and initialize it with the first member of
+*the range [a - z]
 */
 
 int main(void)
@@ -14,5 +14,5 @@ putchar(alphabet);
 alphabet++;
 }
 putchar('\n');
-return(0);
+return (0);
 }
