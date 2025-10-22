@@ -11,7 +11,7 @@ char alphabet;
 while (count < 10)
 
 {
- alphabet = 'a';
+alphabet = 'a';
 
 while (alphabet <= 'z')
 {
