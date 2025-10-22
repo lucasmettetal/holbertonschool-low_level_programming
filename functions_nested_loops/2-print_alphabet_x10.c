@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* main - Prints the alphabet in lowercase
+* print_alphabet_x10 - Prints the alphabet in lowercase
 */
 
 void print_alphabet(void)
 {
 int count = 0;
 char alphabet;
-while (alphabet < 5)
+while (count < 10)
 
 {
  alphabet = 'a';
