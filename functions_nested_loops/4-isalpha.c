@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha - return 0 if is lowercase and uppercase, return else if is otherwise
+ * _isalpha - return 0 if is lower and uppercase, return else if is otherwise
  * @c: The character to check
  * Return: 1 if c is lowercaseand uppercase, 0 otherwise
  */
