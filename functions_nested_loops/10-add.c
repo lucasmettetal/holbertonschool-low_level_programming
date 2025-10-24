@@ -9,13 +9,5 @@
 
 int add(int a, int b)
 {
-
-	int tint = add(a, b);
-
-	_putchar(tint + '0');
-
-	return (0);
-}
-{
 	return (a + b);
 }
