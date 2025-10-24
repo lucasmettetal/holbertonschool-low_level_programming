@@ -3,6 +3,7 @@
 /**
  *times_table - Prints the 9 times table, starting with 0.
  *
+ *Return: Always 0.
  */
 
 void times_table(void)
@@ -21,11 +22,10 @@ void times_table(void)
 			}
 			else if (result < 10)
 			{
-
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(result + 0);
+				_putchar(result + '0');
 			}
 			else
 			{
