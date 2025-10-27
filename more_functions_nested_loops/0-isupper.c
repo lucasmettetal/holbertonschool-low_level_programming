@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * print_sign - return 1 if greater zero, return 0 if is 0; return -1 less zero
+ * _isupper - checks if 'n' is uppercase character or not
  * @c: The character to check
  * Return: 1 if c is lowercase and uppercase, 0 otherwise
  */
 
-int print_sign(int c)
+int _isupper(int c)
 
 {
 	if (c >= 'A' && c <= 'Z')
