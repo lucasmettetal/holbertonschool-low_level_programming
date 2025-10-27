@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _isupper - checks if 'n' is uppercase character or not
@@ -22,4 +21,5 @@ int _isupper(int c)
 		_putchar(' ');
 		_putchar('0');
 	}
+	return (0);
 }
