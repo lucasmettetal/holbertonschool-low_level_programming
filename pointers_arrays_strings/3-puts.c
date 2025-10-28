@@ -10,8 +10,8 @@ void _puts(char *str)
 {
 	int l;
 
-	for (l = 0; (str[i] != '\n' && stl[i] != '\0'); i++)
+	for (l = 0; (str[l] != '\n' && stl[l] != '\0'); l++)
 	{
-		_puts(str[i])
+		_puts(str[l])
 	}
 }
