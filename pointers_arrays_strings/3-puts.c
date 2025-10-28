@@ -13,5 +13,6 @@ void _puts(char *str)
 	for (l = 0; (str[l] != '\n' && str[l] != '\0'); l++)
 	{
 		_putchar(str[l]);
+		_putchar('\n');
 	}
 }
