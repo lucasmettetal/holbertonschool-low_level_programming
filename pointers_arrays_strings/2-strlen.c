@@ -8,9 +8,12 @@
 
 int _strlen(char *s)
 {
-	int Lichar;
+	int len = 0;
 
-	int Lichar = _strlen(s);
+	while (s[len] != '\0')
+	{
+		len++;
+	}
 
-	return (0);
+	return (len);
 }
