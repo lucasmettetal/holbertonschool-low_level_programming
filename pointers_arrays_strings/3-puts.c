@@ -8,21 +8,10 @@
 
 void _puts(char *str)
 {
-	int l = strlen(str) + 1;
-	char *t = l;
+	int l;
 
-	int i;
-
-	for (i = 0; i < l; i++)
+	for (l = 0; (str[i] != '\n' && stl[i] != '\0'); i++)
 	{
-		char ch = str[i];
-
-		if (ch == '\n')
-			break;
-		t[i] = ch;
+		_puts(str[i])
 	}
-
-	t[i] = 0;
-
-	_puts(t);
 }
