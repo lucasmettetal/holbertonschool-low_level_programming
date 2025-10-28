@@ -8,6 +8,8 @@
 
 int _strlen(char *s)
 {
+	int Lichar;
+
 	int Lichar = _strlen(s);
 
 	return (0);
