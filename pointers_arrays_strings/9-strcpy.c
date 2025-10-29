@@ -2,8 +2,8 @@
 
 /**
  * *_strcpy - converts a string to an integer
- * @dest: pointer to the string to be converted
- * @src:
+ * @dest: the buffer pointed
+ * @src: the string
  * Return: the integer value of the string
  */
 
