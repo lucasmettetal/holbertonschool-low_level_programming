@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * _strcmp - function that reverses the content of an array of integers.
- * @a: the array
- * @n: the content
+ *  reverse_array - reverses the content of an array of integers
+ * @a: the array of integers
+ * @n: number of elements in the array
  * Return: 0
  */
 void reverse_array(int *a, int n)
 {
 	int i;
 
-	int temp[n];
+	int temp;
 
-	for (int i = 0; i < n; i++)
-		temp[i] = a[n - i - 1];
-
-	for (int i = 0; i < n; i++)
-		a[i] = temp[i];
+	for (i = 0; i < n / 2; i++)
+		temp = a[1];
+	a[i] = a[n - 1 - i];
+	a[n - 1 - i] = temp;
 }
