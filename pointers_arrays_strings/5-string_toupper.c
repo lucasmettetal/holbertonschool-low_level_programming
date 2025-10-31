@@ -5,9 +5,9 @@
  * @str: the string to be changed
  * Return: pointer to the changed string
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	int i, str;
+	int i;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
