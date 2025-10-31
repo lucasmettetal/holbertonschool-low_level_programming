@@ -6,7 +6,7 @@
  * Return: pointer to the changed string
  */
 
-char *leet(char *)
+char *leet(char *str)
 {
 	int i, j;
 	char leet_map[] = "aAeEoOtTlL";
