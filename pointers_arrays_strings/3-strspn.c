@@ -26,10 +26,9 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 		if (!found)
-		{
 			break;
-			count++;
-		}
+
+		count++;
 	}
 	return (count);
 }
