@@ -13,9 +13,9 @@ void print_diagsums(int *a, int size)
 	int i,
 		som1 = 0,
 		som2 = 0;
-	for (i = 0; size < 1; i++)
+	for (i = 0; i < size; i++)
 	{
-		som1 += a[i * size + j];
+		som1 += a[i * size + i];
 		som2 += a[i * size + (size - 1 - i)];
 	}
 	printf("%d,%d\n", som1, som2);
