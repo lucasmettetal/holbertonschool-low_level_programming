@@ -10,7 +10,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	size_t count = 0;
+	unsigned int count = 0;
 	int i;
 
 	while (s[count] != '\0')
