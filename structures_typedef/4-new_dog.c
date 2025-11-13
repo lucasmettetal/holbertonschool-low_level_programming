@@ -1,39 +1,39 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
+
 /**
  * new_dog - creates a new dog
- * @name: name of the dog
- * @age: age of the dog
- * @owner: owner of the dog
- * Return: pointer to the new dog (dog_t)
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
+ * Return: new dog or NULL
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *newDog;
-	int i, nameLen = 0, ownerLen = 0;
+	dog_t *d;
+	int i, ln = 0, lo = 0;
 
-	while (name[nameLen] != '\0')
-		nameLen++;
-	while (owner[ownerLen] != '\0')
-		ownerLen++;
-	newDog = malloc(sizeof(dog_t));
-	if (newDog == NULL)
+	if (!name || !owner)
 		return (NULL);
-	newDog->name = malloc(nameLen + 1);
-	if (newDog->name == NULL)
-		free(newDog);
-	return (NULL);
-	newDog->owner = malloc(ownerLen + 1);
-	if (newDog->owner == NULL)
-		free(newDog->name);
-	free(newDog);
-	for (i = 0; i < nameLen; i++)
-		newDog->name[i] = name[i];
-	newDog->name[nameLen] = '\0';
-	newDog->age = age;
-	for (i = 0; i < ownerLen; i++)
-		newDog->owner[i] = owner[i];
-	newDog->owner[ownerLen] = '\0';
-	return (newDog);
+	while (name[ln])
+		ln++;
+	while (owner[lo])
+		lo++;
+	d = malloc(sizeof(dog_t));
+	if (!d)
+		return (NULL);
+	d->name = malloc(ln + 1);
+	if (!d->name)
+		return (free(d), NULL);
+	d->owner = malloc(lo + 1);
+	if (!d->owner)
+		return (free(d->name), free(d), NULL);
+	for (i = 0; i < ln; i++)
+		d->name[i] = name[i];
+	d->name[ln] = '\0';
+	for (i = 0; i < lo; i++)
+		d->owner[i] = owner[i];
+	d->owner[lo] = '\0';
+	d->age = age;
+	return (d);
 }
