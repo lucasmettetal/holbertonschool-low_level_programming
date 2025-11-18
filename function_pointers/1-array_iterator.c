@@ -2,18 +2,23 @@
 #include <stddef.h>
 
 /**
- * array_iterator - executes a function on each element of an array
- * @array: pointer to the array
+ * int_index - searches for an integer
+ * @array: array of integers
  * @size: size of the array
- * @action: function pointer to the function to execute
+ * @cmp: pointer to the function to be used to compare values
  * Return: 0
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	size_t i;
+	int i;
 
-	if (array == NULL || action == NULL)
-		return;
+	if (array == NULL || cmp == NULL || size <= 0)
+		return (-1);
+
 	for (i = 0; i < size; i++)
-		action(array[i]);
+	{
+		if (cmp(array[i]) != 0)
+			return (i);
+	}
+	return (-1);
 }
