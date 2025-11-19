@@ -5,6 +5,7 @@
 		"stdlib.h": "c",
 		"stdio.h": "c",
 		"main.h": "c",
-		"function_pointers.h": "c"
+		"function_pointers.h": "c",
+		"cstdlib": "c"
 	}
 }
