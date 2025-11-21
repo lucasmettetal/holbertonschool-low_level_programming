@@ -63,25 +63,27 @@ void print_all(const char *const format, ...)
 	va_list args;
 	unsigned int i = 0, j;
 	char *separator = "";
-	print_type funcs[] = {
+	checker funcs[] = {
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
 		{"s", print_string}};
+
 	va_start(args, format);
 	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
 		while (j < 4)
 		{
-			if (format[i] == *(funcs[j].symbol))
+			if (format[i] == *(funcs[j].type))
 			{
 				printf("%s", separator);
-				funcs[j].print_func(args);
+				funcs[j].function(args);
 				separator = ", ";
 			}
 			j++;
 		}
+
 		i++;
 	}
 	printf("\n");
