@@ -12,9 +12,13 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
 	char *dup_str;
+	unsigned int length = 0;
 
 	if (!head || !str)
 		return (NULL);
+
+	while (str[length])
+		length++;
 
 	dup_str = strdup(str);
 	if (!dup_str)
